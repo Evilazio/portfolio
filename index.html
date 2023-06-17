@@ -7,11 +7,17 @@
     <title>Evilazio Ricarte - Senior Software Engineer</title>
     <meta name="description"
         content="The Personal portifolio of a Senior Software Engineer with 5 years of experience in Full Stack (Angular + .NET) development area.">
-    <meta name="keywords"
-        content="Evilazio Ricarte, Software Engineer, The Best Senior Software Engineer">
+    <meta name="keywords" content="Evilazio Ricarte, Software Engineer, The Best Senior Software Engineer">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+
+    <!-- PWA TAGS -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="theme-color" content="#020617">
+
     <!-- Import tailwind -->
     <link href="/output.css" rel="stylesheet">
 
@@ -49,20 +55,26 @@
             <div class="absolute top-0 left-0 parallax w-full h-full" aria-hidden="true">
 
                 <!-- Flying images -->
-                <img src="/assets/images/angular.svg" 
-                    class="object-contain hidden blur-[2px] w-20 absolute flyer" alt="angular logo image">
+                <img src="/assets/images/angular.svg" class="object-contain hidden blur-[2px] w-20 absolute flyer"
+                    alt="angular logo image">
                 <img src="/assets/images/dotnet.png"
-                    class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer" alt="dotnet logo image">
+                    class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="dotnet logo image">
                 <img src="/assets/images/javascript.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="javascript logo image">
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="javascript logo image">
                 <img src="/assets/images/typescript.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="typescript logo image">
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="typescript logo image">
                 <img src="/assets/images/html.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="html logo image">
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="html logo image">
                 <img src="/assets/images/css.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="css logo image">
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="css logo image">
                 <img src="/assets/images/csharp.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="csharp logo image">
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="csharp logo image">
             </div>
 
 
@@ -73,8 +85,9 @@
                 <img class="rounded-full" width="140px" src="/assets/images/profile.webp" alt="My profile picture">
                 <div class="flex flex-col gap-2">
 
-                    <h1 class="text-xl flex flex-row">Hi, I'm <strong class="ml-2">Evilazio Ricarte</strong> <img src="/assets/images/br-flag.svg"
-                        width="20px" height="16px" alt="Brazil country flag" class="ml-auto mr-auto"></h1>
+                    <h1 class="text-xl flex flex-row">Hi, I'm <strong class="ml-2">Evilazio Ricarte</strong> <img
+                            src="/assets/images/br-flag.svg" width="20px" height="16px" alt="Brazil country flag"
+                            class="ml-auto mr-auto"></h1>
                     <div class="relative flex flex-row w-full rounded-lg overflow-hidden">
                         <div class="flex-1 text-center text-xs font-bold bg-blue-200 dark:bg-blue-800 px-3 py-1">Senior
                         </div>
@@ -388,6 +401,33 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
+    </script>
+
+    <!-- Register ServiceWorker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(function (registration) {
+                        console.log('Service worker installed successfuly: ', registration);
+
+                        registration.addEventListener('updatefound', () => {
+                            console.log('NEW SERVICE WORKER DETECTED. UPDATING IT RIGHT NOW.')
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // Installed new detected version and skipping reload to be activated, activating immediately
+                                    navigator.serviceWorker.controller.postMessage({ action: 'skipWaiting' });
+                                    console.log('Service worker updated successfuly')
+                                }
+                            });
+                        });
+                    })
+                    .catch(function (error) {
+                        console.log('Failed to install the service worker: ', error);
+                    });
+            });
+        }
     </script>
 </body>
 
