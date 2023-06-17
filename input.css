@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c7c7c7 trasparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+    border-radius: 20px;
+    border: 2px none transparent;
+}
+
+i.emoji {
+    font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-style: normal;
+}
+
+.parallax {
+    /* transition: all .3s; */
+    will-change: transform;
+}

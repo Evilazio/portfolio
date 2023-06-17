@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="scroll-smooth scroll-p-8" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evilazio Ricarte - Senior Software Engineer</title>
+    <meta name="description"
+        content="The Personal portifolio of a Senior Software Engineer with 5 years of experience in Full Stack (Angular + .NET) development area.">
+    <meta name="keywords"
+        content="Evilazio Ricarte, Software Engineer, The Best Senior Software Engineer">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Import tailwind -->
+    <link href="/output.css" rel="stylesheet">
+
+    <!-- Import Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+
+<body
+    class=" text-gray-900 flex flex-col selection:bg-slate-950 selection:text-white dark:selection:bg-white dark:selection:text-black bg-slate-200 dark:bg-slate-950 dark:text-slate-200">
+
+    <header
+        class="fixed top-0 z-10 px-4 py-4 flex justify-center items-center flex-row w-full backdrop-blur-sm sm:justify-between">
+        <a class="font-thin hover:underline text-lg hidden sm:inline" aria-label="back to the top"
+            href="#">evilazio.dev</a>
+        <nav class="gap-4 flex">
+            <a class="hover:underline text-base" title="scroll to about section " aria-label="go to about section"
+                href="#about">about</a>
+            <a class="hover:underline text-base" title="scroll to projects section " aria-label="go to projects section"
+                href="#projects">projects</a>
+            <a class="hover:underline text-base" title="scroll to skills section " aria-label="go to skills section"
+                href="#skills">skills</a>
+            <a class="hover:underline text-base" title="scroll to contact section " aria-label="go to contact section"
+                href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <main class="flex flex-col">
+        <section id="home"
+            class="relative flex flex-col justify-center items-center border-b-slate-300 dark:border-b-slate-800 border-b-2 border-solid px-4 py-4 w-full h-screen overflow-hidden">
+
+            <div class="absolute top-0 left-0 parallax w-full h-full" aria-hidden="true">
+
+                <!-- Flying images -->
+                <img src="/assets/images/angular.svg" 
+                    class="object-contain hidden blur-[2px] w-20 absolute flyer" alt="angular logo image">
+                <img src="/assets/images/dotnet.png"
+                    class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer" alt="dotnet logo image">
+                <img src="/assets/images/javascript.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="javascript logo image">
+                <img src="/assets/images/typescript.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="typescript logo image">
+                <img src="/assets/images/html.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="html logo image">
+                <img src="/assets/images/css.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="css logo image">
+                <img src="/assets/images/csharp.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer" alt="csharp logo image">
+            </div>
+
+
+
+            <div
+                class="flex flex-col items-center gap-8 sm:flex-row backdrop-blur-[8px] p-16 rounded-lg bg-opacity-60 bg-slate-200 dark:bg-slate-950 dark:bg-opacity-60">
+
+                <img class="rounded-full" width="140px" src="/assets/images/profile.webp" alt="My profile picture">
+                <div class="flex flex-col gap-2">
+
+                    <h1 class="text-xl flex flex-row">Hi, I'm <strong class="ml-2">Evilazio Ricarte</strong> <img src="/assets/images/br-flag.svg"
+                        width="20px" height="16px" alt="Brazil country flag" class="ml-auto mr-auto"></h1>
+                    <div class="relative flex flex-row w-full rounded-lg overflow-hidden">
+                        <div class="flex-1 text-center text-xs font-bold bg-blue-200 dark:bg-blue-800 px-3 py-1">Senior
+                        </div>
+                        <div class="flex-1 text-center text-xs font-bold bg-green-200 dark:bg-green-800 px-3 py-1">Full
+                            Stack</div>
+                    </div>
+                    <h2 class="font-bold uppercase text-5xl"> Software <br>
+                        <span style="letter-spacing: .15rem;">Enginner</span>
+                    </h2>
+                    <div class="flex flex-row gap-2 mt-1 flex-wrap ">
+
+                        <a href="https://www.linkedin.com/in/evilazio-ricarte-29ab4a1a8/" target="_blank"
+                            aria-label="click here to go to my linkedin page" title="Linkedin"
+                            class="transition-all bg-slate-200 dark:shadow-slate-800 dark:bg-slate-950 flex flex-row items-center gap-2 rounded-full text-xs font-bold px-3 py-1 cursor-pointer shadow-md hover:shadow-none hover:text-white hover:bg-blue-500 dark:hover:bg-blue-800">
+                            <i class="w-3 h-3" icon-name="linkedin"></i>
+                        </a>
+                        <a href="mailto:evilazio147@gmail.com" target="_blank"
+                            aria-label="click here to write me an e-mail" title="E-mail"
+                            class="transition-all bg-slate-200 dark:shadow-slate-800 dark:bg-slate-950 flex flex-row items-center gap-2 rounded-full text-xs font-bold px-3 py-1 cursor-pointer shadow-md hover:shadow-none hover:text-white hover:bg-blue-500 dark:hover:bg-blue-800">
+                            <i class="w-3 h-3" icon-name="mail-plus"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1NcOCMk6UQEiKIru5jWMERiKPiI9sIgXK/view?usp=sharing"
+                            title="Resume Download" target="_blank" aria-label="click here to download my resume"
+                            class="transition-all bg-slate-200 dark:shadow-slate-800 dark:bg-slate-950 flex flex-row items-center gap-2 rounded-full text-xs font-bold px-3 py-1 cursor-pointer shadow-md hover:shadow-none hover:text-white hover:bg-blue-500 dark:hover:bg-blue-800">
+                            <i class="w-3 h-3" icon-name="download"></i>
+                        </a>
+                        <a href="https://web.whatsapp.com/send/?phone=5511954464959&text=Ol%C3%A1%20Evilazio,%20vim%20pela%20sua%20pagina%20evilazio.dev."
+                            target="_blank" aria-label="Click here to talk with me" title="Text me on Whatsapp"
+                            class="transition-all bg-slate-200 dark:shadow-slate-800 dark:bg-slate-950 flex flex-row flex-1 justify-center items-center gap-2 rounded-full text-xs font-semibold px-3 py-1 cursor-pointer shadow-md hover:shadow-none hover:text-white hover:bg-blue-500 dark:hover:bg-blue-800">
+                            Let's Talk <i class="w-3 h-3" icon-name="messages-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a class=" absolute bottom-0 left-[50%] translate-x-[-50%] p-4 bg-opacity-60 hover:bg-slate-300 dark:hover:bg-slate-900 rounded"
+                aria-label="click to scroll to the about section" href="#about"><i class="animate-bounce"
+                    icon-name="chevron-down"></i></a>
+        </section>
+
+        <section class="relative p-8 w-full max-w-[860px] m-auto" id="about">
+            <h2 class="text-3xl mb-8 uppercase">About</h2>
+            <p class="text-xl">
+                Hello, my name is Evilazio Ricarte, I'm <b>23 years old</b>, and I reside in São Paulo, <b>Brazil</b>.
+                <br>
+                I'm a technology enthusiast and started programming at the age of 13, developing websites and making
+                game modifications. I graduated in <b>Systems Analysis and Development</b> and also completed a
+                postgraduate degree in <b>Software Engineering and Agile Method</b>.
+                <br><br>
+                Over the past 5 years, I have gained formal experience in <b>Full Stack</b> development using
+                <b>Angular</b> and <b>.NET</b>,
+                where I have had the responsability <b>to architect solutions</b>, <b>manage projects</b>, and act as a
+                <b>Tech Lead</b>.
+                <br><br>
+                In the future, my aim is to actively engage in new challenging projects, fostering my growth as a
+                tech lead while continually enhancing my full-stack development skills.
+                <br><br>
+            </p>
+            <p class="font-thin text-xl mt-6">"I believe that <b>knowledge sharing</b> is the crucial point to achieving
+                even better results in
+                the deliveries."</p>
+
+        </section>
+
+        <section class="relative p-8 w-full max-w-[860px] m-auto" id="projects">
+            <h2 class="text-3xl mb-8 uppercase">Projects</h2>
+
+            <ul class="grid grid-cols-1 gap-8 justify-center items-start sm:grid-cols-2">
+
+                <li class="flex flex-col w-[420px] max-w-[100%] mx-auto">
+                    <h3 class="">
+                        <a class="flex flex-row items-center justify-center text-2xl mb-2 gap-2 hover:underline"
+                            target="_blank" href="https://trisul-sa.com.br">Trisul S.A <i class="w-4"
+                                icon-name="external-link"></i></a>
+                    </h3>
+                    <p class="mb-4 text-sm text-center w-[90%] m-auto">
+                        It is a website of a high standard building company in Brazil that have a large visitors and
+                        unique impression per month.</p>
+
+                    <div class="relative flex flex-row items-center mb-4 m-auto ">
+                        <img class="relative pr-8" src="/assets/images/trisul/pc.webp" width="420px" height="200px"
+                            alt="Trisul website shown on a computer">
+                        <img class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
+                            src="/assets/images/trisul/mobile.webp" width="120px" height="160px"
+                            alt="Trisul website shown on a smartphone">
+                    </div>
+                    <ul class="flex flex-row gap-2 justify-center flex-wrap mb-4 w-[85%] m-auto"
+                        aria-label="Tecnologias utilizadas">
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Angular
+                        </li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">SSR</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">PWA</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Custom
+                            CMS</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Restfull
+                            API</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">.NET
+                        </li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">MySQL
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="flex flex-col w-[420px] max-w-[100%] mx-auto">
+                    <h3 class="">
+                        <a class="flex flex-row items-center justify-center text-2xl mb-2 gap-2 hover:underline"
+                            href="https://vamos.com.br" target="_blank">Vamos <i class="w-4"
+                                icon-name="external-link"></i></a>
+                    </h3>
+                    <p class="mb-4 text-sm text-center w-[90%] m-auto">
+                        A website for a top rental company offering heavy equipment, trucks and
+                        implements, owned by a major Brazilian vehicle rental holding.</p>
+
+                    <div class="relative flex flex-row items-center mb-4 m-auto ">
+                        <img class="relative pr-8" src="/assets/images/vamos/pc.webp" width="420px" height="200px"
+                            alt="Vamos website shown on a computer">
+                        <img class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
+                            src="/assets/images/vamos/mobile.webp" width="120px" height="160px"
+                            alt="Vamos website shown on a smartphone">
+                    </div>
+                    <ul class="flex flex-row gap-2 justify-center flex-wrap mb-4 w-[85%] m-auto"
+                        aria-label="Tecnologias utilizadas">
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Angular
+                        </li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">SSR</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">PWA</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Strapi
+                            CMS</li>
+                        <li class="rounded-full px-4 py-1 text-xs font-semibold bg-slate-300 dark:bg-slate-800">Restfull
+                            API</li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </section>
+
+        <section class="relative p-8 w-full max-w-[860px] m-auto" id="skills">
+            <h2 class="text-3xl mb-8 uppercase">Skills</h2>
+            <ul class="flex flex-col gap-4 w-full" aria-label="List of my main skills">
+
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="JavaScript is 95%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">JavaScript</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 95%;"></div>
+                    </div>
+                    <span class="text-right w-full">95%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="Strapi CMS is 95%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">Strapi CMS</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 95%;"></div>
+                    </div>
+                    <span class="text-right w-full">95%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="C# is 85%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">C#</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 85%;"></div>
+                    </div>
+                    <span class="text-right w-full">85%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="HTML + CSS is 98%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">HTML + CSS</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 98%;"></div>
+                    </div>
+                    <span class="text-right w-full">98%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="TypeScript is 90%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">TypeScript</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 90%;"></div>
+                    </div>
+                    <span class="text-right w-full">90%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="SQL is 65%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">SQL</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 65%;"></div>
+                    </div>
+                    <span class="text-right w-full">65%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="Angular is 95%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">Angular</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 95%;"></div>
+                    </div>
+                    <span class="text-right w-full">95%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="NET is 80%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">.NET</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 80%;"></div>
+                    </div>
+                    <span class="text-right w-full">80%</span>
+                </li>
+                <li class="flex-1 grid grid-cols-[100px_1fr_50px] gap-4 items-center" aria-label="English is 75%">
+                    <h3 class="flex flex-row items-center">
+                        <span class="font-bold">English</span>
+                    </h3>
+                    <div class="bar bg-slate-300 dark:bg-slate-800 rounded-full flex-1 h-2 overflow-hidden">
+                        <div class="progress bg-blue-500 h-full rounded-full" style="width: 75%;"></div>
+                    </div>
+                    <span class="text-right w-full">75%</span>
+                </li>
+
+
+            </ul>
+            <p class="mt-4 text-xs font-thin">% Estimated amount of my knowledge relative to how much can be known about
+                each one..</p>
+        </section>
+
+        <section class="relative p-8 w-full max-w-[860px] m-auto" id="contact">
+            <h2 class="text-3xl mb-8 uppercase">Contact & Links</h2>
+
+            <div class="flex flex-row w-full items-start flex-wrap gap-8">
+
+                <div class="flex flex-col sm:border-r-[1px] sm:border-r-slate-300 sm:pr-8 flex-[1_1_240px]">
+
+                    <p class="text-lg flex flex-row items-center font-bold">Evilazio Ricarte <span
+                            class="text-sm ml-2 font-normal">~ He/Him</span></p>
+                    <p class="text-sm font-medium flex items center gap-2"><img src="/assets/images/br-flag.svg"
+                            width="20px" height="16px" alt="Brazil country flag"> Portuguese <span class="font-normal">-
+                            native</span></p>
+                    <p class="text-sm font-medium flex items center gap-2"><img src="/assets/images/usa-flag.svg"
+                            width="20px" height="16px" alt="United States of America country flag"> English <span
+                            class="font-normal">-
+                            intermediate</span></p>
+
+                    <a href="https://drive.google.com/file/d/1NcOCMk6UQEiKIru5jWMERiKPiI9sIgXK/view?usp=sharing"
+                        target="_blank"
+                        class="hover:bg-blue-600 dark:hover:bg-blue-800 w-full bg-blue-600 mt-6 text-white hover:shadow-none active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        Resume Download
+                        <i class="w-3" icon-name="download"></i>
+                    </a>
+
+                </div>
+
+                <div class="grid gap-4 flex-[99_99_300px] "
+                    style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); ">
+                    <a href="https://www.linkedin.com/in/evilazio-ricarte-29ab4a1a8/" target="_blank"
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        LinkedIn
+                        <i class="w-3" icon-name="external-link"></i>
+
+                    </a>
+                    <a href="https://github.com/Evilazio" target="_blank"
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+
+                        GitHub
+                        <i class="w-3" icon-name="external-link"></i>
+                    </a>
+                    <a href="mailto:evilazio147@gmail.com" target="_blank"
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        E-mail
+                        <i class="w-3" icon-name="external-link"></i>
+
+                    </a>
+                    <a href="https://web.whatsapp.com/send/?phone=5511954464959&text=Ol%C3%A1%20Evilazio,%20vim%20pela%20sua%20pagina%20evilazio.dev."
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        Whatsapp
+                        <i class="w-3" icon-name="external-link"></i>
+                    </a>
+                    <a href="https://stackoverflow.com/users/10241693/evilazio-ricarte"
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        StackOverflow
+                        <i class="w-3" icon-name="external-link"></i>
+                    </a>
+                    <a href="https://www.npmjs.com/~evilazio"
+                        class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                        npm.js
+                        <i class="w-3" icon-name="external-link"></i>
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="relative p-8 w-full max-w-[860px] m-auto pt-8 pb-16 text-center">
+            Thank you! 😉
+        </footer>
+    </main>
+
+    <script src="js/util.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/flyer.js"></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

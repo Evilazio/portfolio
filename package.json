@@ -1,0 +1,19 @@
+{
+  "name": "evilazio-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind-run": "npx tailwindcss -i ./input.css -o ./output.css",
+    "tailwind-watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evilazio Ricarte",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "lucide": "^0.242.0"
+  }
+}
