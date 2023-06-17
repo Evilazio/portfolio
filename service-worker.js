@@ -5,6 +5,8 @@ var urlsToCache = [
   '/js/flyer.js',
   '/js/parallax.js',
   '/js/util.js',
+  'https://unpkg.com/lucide@latest',
+  'https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'
 ];
 
 self.addEventListener('install', function (event) {
@@ -42,14 +44,14 @@ self.addEventListener('fetch', function (event) {
     // This method looks at the request and
     // finds any cached results from any of the
     // caches that the Service Worker has created.
-    
+    // console.log(event)
     caches.match(event.request)
-      .then(function (response) {
-        // If a cache is hit, we can return thre response.
-        if (response) {
-          return response;
-        }
-
+    .then(function (response) {
+      // If a cache is hit, we can return thre response.
+      if (response) {
+        return response;
+      }
+      
         // Clone the request. A request is a stream and
         // can only be consumed once. Since we are consuming this
         // once by cache and once by the browser for fetch, we need
