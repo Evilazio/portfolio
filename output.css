@@ -599,6 +599,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -637,6 +641,10 @@ video {
 
 .max-h-\[80\%\] {
   max-height: 80%;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-20 {
@@ -717,6 +725,10 @@ video {
   cursor: pointer;
 }
 
+.scroll-m-8 {
+  scroll-margin: 2rem;
+}
+
 .scroll-p-8 {
   scroll-padding: 2rem;
 }
@@ -763,6 +775,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -981,6 +997,10 @@ video {
 
 .blur-\[2px\] {
   --tw-blur: blur(2px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

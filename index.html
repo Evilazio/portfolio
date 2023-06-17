@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth scroll-p-8" lang="en">
+<html class="" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
 </head>
 
 <body
-    class=" text-gray-900 flex flex-col selection:bg-slate-950 selection:text-white dark:selection:bg-white dark:selection:text-black bg-slate-200 dark:bg-slate-950 dark:text-slate-200">
+    class=" text-gray-900 flex flex-col selection:bg-slate-950 selection:text-white dark:selection:bg-white dark:selection:text-black bg-slate-200 dark:bg-slate-950 dark:text-slate-200 overflow-auto min-h-full scroll-smooth scroll-p-8">
 
     <header
         class="fixed top-0 z-10 px-4 py-4 flex justify-center items-center flex-row w-full backdrop-blur-sm sm:justify-between">
@@ -49,38 +49,15 @@
     </header>
 
     <main class="flex flex-col">
-        <section id="home"
+        <section id="#"
             class="relative flex flex-col justify-center items-center border-b-slate-300 dark:border-b-slate-800 border-b-2 border-solid px-4 py-4 w-full h-screen overflow-hidden">
 
-            <div class="absolute top-0 left-0 parallax w-full h-full" aria-hidden="true">
 
-                <!-- Flying images -->
-                <img src="/assets/images/angular.svg" class="object-contain hidden blur-[2px] w-20 absolute flyer"
-                    alt="angular logo image">
-                <img src="/assets/images/dotnet.png"
-                    class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="dotnet logo image">
-                <img src="/assets/images/javascript.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="javascript logo image">
-                <img src="/assets/images/typescript.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="typescript logo image">
-                <img src="/assets/images/html.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="html logo image">
-                <img src="/assets/images/css.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="css logo image">
-                <img src="/assets/images/csharp.svg"
-                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="csharp logo image">
-            </div>
 
 
 
             <div
-                class="flex flex-col items-center gap-8 sm:flex-row backdrop-blur-[8px] p-16 rounded-lg bg-opacity-60 bg-slate-200 dark:bg-slate-950 dark:bg-opacity-60">
+                class="flex flex-col items-center gap-8 sm:flex-row backdrop-blur-[8px] p-16 rounded-lg bg-opacity-60 bg-slate-200 dark:bg-slate-950 dark:bg-opacity-60 z-10">
 
                 <img class="rounded-full" width="140px" src="/assets/images/profile.webp" alt="My profile picture">
                 <div class="flex flex-col gap-2">
@@ -120,6 +97,31 @@
                             Let's Talk <i class="w-3 h-3" icon-name="messages-square"></i></a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Flying images -->
+            <div class="absolute top-0 left-0 parallax w-full h-full" aria-hidden="true">
+
+                <img src="/assets/images/angular.svg" class="object-contain hidden blur-[2px] w-20 absolute flyer"
+                    alt="angular logo image">
+                <img src="/assets/images/dotnet.png"
+                    class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="dotnet logo image">
+                <img src="/assets/images/javascript.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="javascript logo image">
+                <img src="/assets/images/typescript.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="typescript logo image">
+                <img src="/assets/images/html.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="html logo image">
+                <img src="/assets/images/css.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="css logo image">
+                <img src="/assets/images/csharp.svg"
+                    class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
+                    alt="csharp logo image">
             </div>
 
             <a class=" absolute bottom-0 left-[50%] translate-x-[-50%] p-4 bg-opacity-60 hover:bg-slate-300 dark:hover:bg-slate-900 rounded"
@@ -335,12 +337,12 @@
                             class="font-normal">-
                             intermediate</span></p>
 
-                    <a href="https://drive.google.com/file/d/1NcOCMk6UQEiKIru5jWMERiKPiI9sIgXK/view?usp=sharing"
-                        target="_blank"
-                        class="hover:bg-blue-600 dark:hover:bg-blue-800 w-full bg-blue-600 mt-6 text-white hover:shadow-none active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
-                        Resume Download
-                        <i class="w-3" icon-name="download"></i>
-                    </a>
+                        <a href="https://drive.google.com/file/d/1NcOCMk6UQEiKIru5jWMERiKPiI9sIgXK/view?usp=sharing"
+                            target="_blank"
+                            class="hover:bg-blue-600 dark:hover:bg-blue-800 w-full bg-blue-600 mt-6 text-white hover:shadow-none active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
+                            Resume Download
+                            <i class="w-3" icon-name="download"></i>
+                        </a>
 
                 </div>
 
