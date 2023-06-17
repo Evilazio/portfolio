@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-web-site-cache-v3';
+var CACHE_NAME = 'my-web-site-cache-v4';
 var urlsToCache = [
   '/index.html',
   '/output.css',
@@ -13,6 +13,7 @@ self.addEventListener('install', function (event) {
   // event.waitUntil takes a promise to know how
   // long the installation takes, and whether it 
   // succeeded or not.
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function (cache) {
