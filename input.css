@@ -35,3 +35,16 @@ i.emoji {
     /* transition: all .3s; */
     will-change: transform;
 }
+
+.experience-bar::before {
+    content: "";
+    @apply absolute h-full w-1 bg-slate-500 left-[22px] rounded-full bg-opacity-50;
+}
+
+.experience-bar ul li {
+    @apply flex items-start gap-3;
+}
+.experience-bar ul li::before {
+    content: '';
+    @apply w-[6px] h-[6px] block rounded-full mt-2 flex-[0_0_auto] bg-current;
+}

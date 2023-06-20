@@ -37,14 +37,16 @@
         <a class="font-thin hover:underline text-lg hidden sm:inline" aria-label="back to the top"
             href="#">evilazio.dev</a>
         <nav class="gap-4 flex">
+            <a class="hover:underline text-base hidden sm:block" title="scroll to about section "
+                aria-label="go to about section" href="#about">about</a>
             <a class="hover:underline text-base" title="scroll to about section " aria-label="go to about section"
-                href="#about">about</a>
-            <a class="hover:underline text-base" title="scroll to projects section " aria-label="go to projects section"
-                href="#projects">projects</a>
-            <a class="hover:underline text-base" title="scroll to skills section " aria-label="go to skills section"
+                href="#experiences">experiences</a>
+            <a class="hover:underline text-base" title="scroll to experiences section "
+                aria-label="go to experiences section" href="#projects">projects</a>
+            <a class="hover:underline text-base hidden sm:block" title="scroll to skills section " aria-label="go to skills section"
                 href="#skills">skills</a>
-            <a class="hover:underline text-base" title="scroll to certifications section " aria-label="go to certifications section"
-                href="#certifications">certifications</a>
+            <a class="hover:underline text-base" title="scroll to certifications section "
+                aria-label="go to certifications section" href="#certifications">certifications</a>
             <a class="hover:underline text-base" title="scroll to contact section " aria-label="go to contact section"
                 href="#contact">contact</a>
         </nav>
@@ -153,6 +155,59 @@
             <p class="font-thin text-xl mt-6">"I believe that <b>knowledge sharing</b> is the crucial point to achieving
                 even better results in
                 the deliveries."</p>
+
+        </section>
+
+        <section class="relative p-8 w-full max-w-[860px] m-auto" id="experiences">
+            <h2 class="text-3xl mb-8 uppercase">Professional Experiences</h2>
+
+            <div class="experience-bar relative flex items-center gap-4 w-full">
+                <img src="assets/images/jellyfish.png" class="mb-auto rounded-lg sticky top-36" width="48px"
+                    height="48px" alt="Jellyfish's logo, it is a big white 'J' and a blue Background" title="Jellyfish">
+                <div class="flex flex-col w-full group">
+                    <h4 class="flex items-center flex-wrap text-xl font-medium gap-x-2 ">
+                        <a href="https://jellyfish.com" target="_blank"
+                            class="flex items-center flex-[0_0_350px] gap-x-2 hover:underline mr-auto"><b>Jellyfish</b><i class="w-4"
+                                icon-name="external-link"></i></a>
+                        <span class="flex items-center gap-3  text-right font-thin text-base">4 years 11 months <i
+                                class="w-4" icon-name="clock"></i></span>
+                    </h4>
+                    <p>São Paulo, SP - Brazil (Remote)</p>
+                    <ul
+                        class="opacity-50 group-hover:opacity-50 hover:group-hover:opacity-100 pb-4 border-b border-slate-400 ">
+                        <h3 class="mt-4 text-xl w-full mb-2">
+                            <b class="font-medium">Trainee - Web Developer (In-person)</b>
+                            <p class="text-sm">Jul 2018 - Jan 2019</p>
+                        </h3>
+                        <li>Building interfaces and front-end functionalities (HTML, CSS & JS).</li>
+                        <li>Fixing some issues on back-end code (C#).</li>
+                    </ul>
+
+                    <ul
+                        class="opacity-50 group-hover:opacity-50 hover:group-hover:opacity-100 pb-4 border-b border-slate-400 ">
+                        <h3 class="mt-4 text-xl w-full mb-2">
+                            <b class="font-medium">Mid-Level Full Stack Developer</b>
+                            <p class="text-sm">Feb 2019 - Feb 2021 </p>
+                        </h3>
+                        <li>Developing complete solutions using .NET MVC and SQL
+                            Server.</li>
+                        <li>Making database models & use cases.</li>
+                        <li>Refactoring and Good Practices implementations.</li>
+
+                    </ul>
+                    <ul class="  group-hover:opacity-50 hover:group-hover:opacity-100">
+                        <h3 class="mt-4 text-xl w-full mb-2">
+                            <b class="font-medium">Senior Full Stack Engineer Manager</b>
+                            <p class="text-sm">Feb 2021 - May 2023 </p>
+                        </h3>
+                        <li>Tech Lead of the development team.</li>
+                        <li>Full Stack Developing: Angular and .NET Core (C#).</li>
+                        <li>Planning & Setup projects.</li>
+                    </ul>
+
+
+                </div>
+            </div>
 
         </section>
 
@@ -325,26 +380,25 @@
 
         <section class="relative p-8 w-full max-w-[860px] m-auto" id="certifications">
             <h2 class="text-3xl mb-8 uppercase">Certifications</h2>
-            <ul
-                class="flex flex-row flex-wrap justify-center m-auto gap-8 select-none overflow-x-auto max-w-full pb-4">
+            <ul class="flex flex-row flex-wrap justify-center m-auto gap-8 select-none overflow-x-auto max-w-full pb-4">
 
-                <li class="transition-all flex flex-[1_0_250px] flex-col w-64 gap-4 rounded-lg  
+                <li class="transition-all flex flex-[1_0_350px] flex-col w-64 gap-4 rounded-lg  
                     p-6 snap-start dark:bg-slate-800 bg-slate-100 items-center text-center">
                     <img class="pointer-events-none w-full max-w-full object-contain max-h-12"
                         src="assets/images/certifications/marcaUnicidVariacao.svg" alt="">
-                    <h3 class=" text-md uppercase font-bold">Software Engineering and <br> Agile Methods</h3>
+                    <h3 class=" text-md uppercase font-medium mt-4">Software Engineering and <br> Agile Methods</h3>
                     <span class="text-sm mt-auto">Specialization</span>
 
                 </li>
-                <li class="transition-all flex flex-[1_0_250px] flex-col w-64 gap-4 rounded-lg  
+                <li class="transition-all flex flex-[1_0_350px] flex-col w-64 gap-4 rounded-lg  
                     p-6 snap-start dark:bg-slate-800 bg-slate-100 items-center text-center">
                     <img class="pointer-events-none w-full max-w-full object-contain max-h-12"
                         src="assets/images/certifications/marcaCruzeirodosulVariacao.svg" alt="">
-                    <h3 class=" text-md uppercase font-bold">Analysis and <br> Systems development</h3>
+                    <h3 class=" text-md uppercase font-medium mt-4">Analysis and <br> Systems development</h3>
                     <span class="text-sm mt-auto">Bachelor of Technology</span>
 
                 </li>
-                
+
             </ul>
         </section>
 
@@ -437,7 +491,19 @@
         </footer>
     </main>
 
-    <div class="fixed bottom-0 right-0 p-4 z-20 block">
+    <div class="fixed bottom-0 right-0 p-2 z-20 flex flex-col gap-2">
+        <a href="#" aria-label="Click here to share this page" title="Share this page"
+            class=" hover:bg-blue-600 dark:hover:bg-blue-600 bg-slate-500 dark:bg-slate-600 text-white hover:shadow-none 
+            active:bg-emerald-400 hover:text-white justify-center text-smaatransition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
+
+            <i class="w-4" icon-name="arrow-up"></i>
+        </a>
+        <!-- <button aria-label="Click here to share this page" title="Share this page"
+            class="share hover:bg-blue-600 dark:hover:bg-blue-800 bg-slate-500  dark:bg-slate-300 text-white hover:shadow-none 
+            active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
+
+            <i class="w-4" icon-name="arrow-down"></i>
+        </button> -->
         <button aria-label="Click here to share this page" title="Share this page"
             class="share hover:bg-blue-600 dark:hover:bg-blue-800 bg-slate-500  dark:bg-blue-700 text-white hover:shadow-none 
             active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
