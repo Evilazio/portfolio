@@ -33,9 +33,9 @@
     class=" text-gray-900 flex flex-col selection:bg-slate-950 selection:text-white dark:selection:bg-white dark:selection:text-black bg-slate-200 dark:bg-slate-950 dark:text-slate-200 overflow-auto min-h-full">
 
     <header
-        class="fixed top-0 z-50 px-4 py-4 flex justify-center items-center flex-row w-full backdrop-blur-sm sm:justify-between">
+        class="fixed top-0 z-50 sm:px-4 py-4 flex justify-center items-center flex-row w-full backdrop-blur-sm sm:justify-between">
         <a class="font-thin hover:underline text-lg hidden sm:inline" aria-label="back to the top"
-            href="#">evilazio.dev</a>
+            href="#" title="go to the top">evilazio.dev</a>
         <nav class="gap-4 flex">
             <a class="hover:underline text-base hidden sm:block" title="scroll to about section "
                 aria-label="go to about section" href="#about">about</a>
@@ -63,12 +63,13 @@
             <div
                 class="flex flex-col items-center gap-8 sm:flex-row backdrop-blur-[8px] p-16 rounded-lg bg-opacity-60 bg-slate-200 dark:bg-slate-950 dark:bg-opacity-60 z-10">
 
-                <img loading="lazy"  class="rounded-full" width="140px" src="/assets/images/profile.webp" alt="My profile picture">
+                <img loading="lazy" class="rounded-full" width="140px" src="/assets/images/profile.webp"
+                    alt="My profile picture" title="My profile picture" >
                 <div class="flex flex-col gap-2">
 
-                    <h1 class="text-xl flex flex-row">Hi, I'm <strong class="ml-2">Evilazio Ricarte</strong> <img loading="lazy" 
-                            src="/assets/images/br-flag.svg" width="20px" height="16px" alt="Brazil country flag"
-                            class="ml-auto mr-auto"></h1>
+                    <h1 class="text-xl flex flex-row">Hi, I'm <strong class="ml-2">Evilazio Ricarte</strong> <img
+                            loading="lazy" src="/assets/images/br-flag.svg" width="20px" height="16px"
+                            alt="Brazil country flag" class="ml-auto mr-auto" title="Brazil country flag" class="ml-auto mr-auto" ></h1>
                     <div class="relative flex flex-row w-full rounded-lg overflow-hidden">
                         <div class="flex-1 text-center text-sm font-medium bg-blue-200 dark:bg-blue-800 px-3 py-1">
                             Senior
@@ -107,26 +108,26 @@
             <!-- Flying images -->
             <div class="absolute top-0 left-0 parallax w-full h-full" aria-hidden="true">
 
-                <img loading="lazy"  src="/assets/images/angular.svg" class="object-contain hidden blur-[2px] w-20 absolute flyer"
-                    alt="angular logo image">
-                <img loading="lazy"  src="/assets/images/dotnet.png"
+                <img loading="lazy" src="/assets/images/angular.svg"
+                    class="object-contain hidden blur-[2px] w-20 absolute flyer" alt="angular logo image" title="angular logo image" >
+                <img loading="lazy" src="/assets/images/dotnet.png"
                     class="object-contain hidden rounded-full overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="dotnet logo image">
-                <img loading="lazy"  src="/assets/images/javascript.svg"
+                    alt="dotnet logo image" title="dotnet logo image" >
+                <img loading="lazy" src="/assets/images/javascript.svg"
                     class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="javascript logo image">
-                <img loading="lazy"  src="/assets/images/typescript.svg"
+                    alt="javascript logo image" title="javascript logo image" >
+                <img loading="lazy" src="/assets/images/typescript.svg"
                     class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="typescript logo image">
-                <img loading="lazy"  src="/assets/images/html.svg"
+                    alt="typescript logo image" title="typescript logo image" >
+                <img loading="lazy" src="/assets/images/html.svg"
                     class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="html logo image">
-                <img loading="lazy"  src="/assets/images/css.svg"
+                    alt="html logo image" title="html logo image" >
+                <img loading="lazy" src="/assets/images/css.svg"
                     class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="css logo image">
-                <img loading="lazy"  src="/assets/images/csharp.svg"
+                    alt="css logo image" title="css logo image" >
+                <img loading="lazy" src="/assets/images/csharp.svg"
                     class="object-contain hidden rounded-xl overflow-hidden blur-[2px] w-20 absolute flyer"
-                    alt="csharp logo image">
+                    alt="csharp logo image" title="csharp logo image" >
             </div>
 
             <a class=" absolute bottom-0 left-[50%] translate-x-[-50%] p-4 bg-opacity-60 hover:bg-slate-300 dark:hover:bg-slate-900 rounded"
@@ -162,33 +163,36 @@
             <h2 class="text-3xl mb-8 uppercase">Professional Experiences</h2>
 
             <div class="experience-bar relative flex items-center gap-4 w-full">
-                <img loading="lazy"  src="assets/images/jellyfish.png" class="mb-auto rounded-lg sticky top-36" width="48px"
-                    height="48px" alt="Jellyfish's logo, it is a big white 'J' and a blue Background" title="Jellyfish">
+                <img loading="lazy" src="assets/images/jellyfish.png" class="mb-auto rounded-lg sticky top-36"
+                    width="48px" height="48px" alt="Jellyfish's logo, it is a big white 'J' and a blue Background" title="Jellyfish's logo, it is a big white 'J' and a blue Background" 
+                    title="Jellyfish">
                 <div class="flex flex-col w-full group">
-                    <h4 class="flex items-center flex-wrap text-xl font-medium gap-x-2 ">
-                        <a href="https://jellyfish.com" target="_blank"
-                            class="flex items-center flex-[0_0_350px] gap-x-2 hover:underline mr-auto"><b>Jellyfish</b><i
-                                class="w-4" icon-name="external-link"></i></a>
+                    <h3 class="flex items-center flex-wrap text-xl max-w-full font-medium gap-x-2 ">
+                        <a href="https://jellyfish.com" target="_blank" title="Access Jellyfish website"
+                            class="flex items-center flex-[0_0_350px] max-w-full gap-x-2 hover:underline mr-auto">
+                            <b>Jellyfish</b>
+                            <i class="w-4 " icon-name="external-link"></i>
+                        </a>
                         <span class="flex items-center gap-3  text-right font-thin text-base">4 years 11 months <i
                                 class="w-4" icon-name="clock"></i></span>
-                    </h4>
+                    </h3>
                     <p>São Paulo, SP - Brazil (Remote)</p>
                     <ul
                         class="opacity-50 group-hover:opacity-50 hover:group-hover:opacity-100 pb-4 border-b border-slate-400 ">
-                        <h3 class="mt-4 text-xl w-full mb-2">
+                        <h4 class="mt-4 text-xl w-full mb-2">
                             <b class="font-medium">Trainee - Web Developer (In-person)</b>
                             <p class="text-sm">Jul 2018 - Jan 2019</p>
-                        </h3>
+                        </h4>
                         <li>Building interfaces and front-end functionalities (HTML, CSS & JS).</li>
                         <li>Fixing some issues on back-end code (C#).</li>
                     </ul>
 
                     <ul
                         class="opacity-50 group-hover:opacity-50 hover:group-hover:opacity-100 pb-4 border-b border-slate-400 ">
-                        <h3 class="mt-4 text-xl w-full mb-2">
+                        <h4 class="mt-4 text-xl w-full mb-2">
                             <b class="font-medium">Mid-Level Full Stack Developer</b>
                             <p class="text-sm">Feb 2019 - Feb 2021 </p>
-                        </h3>
+                        </h4>
                         <li>Developing complete solutions using .NET MVC and SQL
                             Server.</li>
                         <li>Making database models & use cases.</li>
@@ -196,10 +200,10 @@
 
                     </ul>
                     <ul class="  group-hover:opacity-50 hover:group-hover:opacity-100">
-                        <h3 class="mt-4 text-xl w-full mb-2">
+                        <h4 class="mt-4 text-xl w-full mb-2">
                             <b class="font-medium">Senior Full Stack Engineer Manager</b>
                             <p class="text-sm">Feb 2021 - May 2023 </p>
-                        </h3>
+                        </h4>
                         <li>Tech Lead of the development team.</li>
                         <li>Full Stack Developing: Angular and .NET Core (C#).</li>
                         <li>Planning & Setup projects.</li>
@@ -219,7 +223,7 @@
                 <li class="flex flex-col w-[420px] max-w-[100%] mx-auto">
                     <h3 class="">
                         <a class="flex flex-row items-center justify-center text-2xl mb-2 gap-2 hover:underline"
-                            target="_blank" href="https://trisul-sa.com.br">Trisul S.A <i class="w-4"
+                            target="_blank" href="https://trisul-sa.com.br" title="Access Trisul project website">Trisul S.A <i class="w-4"
                                 icon-name="external-link"></i></a>
                     </h3>
                     <p class="mb-4 text-sm text-center w-[90%] m-auto">
@@ -227,11 +231,12 @@
                         unique impression per month.</p>
 
                     <div class="relative flex flex-row items-center mb-4 m-auto ">
-                        <img loading="lazy"  class="relative pr-8" src="/assets/images/trisul/pc.webp" width="420px" height="200px"
-                            alt="Trisul website shown on a computer">
-                        <img loading="lazy"  class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
+                        <img loading="lazy" class="relative pr-8" src="/assets/images/trisul/pc.webp" width="420px"
+                            height="200px" alt="Trisul website shown on a computer" title="Trisul website shown on a computer" >
+                        <img loading="lazy"
+                            class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
                             src="/assets/images/trisul/mobile.webp" width="120px" height="160px"
-                            alt="Trisul website shown on a smartphone">
+                            alt="Trisul website shown on a smartphone" title="Trisul website shown on a smartphone" >
                     </div>
                     <ul class="flex flex-row gap-2 justify-center flex-wrap mb-4 w-[85%] m-auto"
                         aria-label="Tecnologias utilizadas">
@@ -255,7 +260,7 @@
                 <li class="flex flex-col w-[420px] max-w-[100%] mx-auto">
                     <h3 class="">
                         <a class="flex flex-row items-center justify-center text-2xl mb-2 gap-2 hover:underline"
-                            href="https://vamos.com.br" target="_blank">Vamos <i class="w-4"
+                            href="https://vamos.com.br" title="Access Vamos project website" target="_blank">Vamos <i class="w-4"
                                 icon-name="external-link"></i></a>
                     </h3>
                     <p class="mb-4 text-sm text-center w-[90%] m-auto">
@@ -263,11 +268,12 @@
                         implements, owned by a major Brazilian vehicle rental holding.</p>
 
                     <div class="relative flex flex-row items-center mb-4 m-auto ">
-                        <img loading="lazy"  class="relative pr-8" src="/assets/images/vamos/pc.webp" width="420px" height="200px"
-                            alt="Vamos website shown on a computer">
-                        <img loading="lazy"  class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
+                        <img loading="lazy" class="relative pr-8" src="/assets/images/vamos/pc.webp" width="420px"
+                            height="200px" alt="Vamos website shown on a computer" title="Vamos website shown on a computer" >
+                        <img loading="lazy"
+                            class="absolute z-10 top-[50%] translate-y-[-50%] right-0 object-contain max-h-[80%]"
                             src="/assets/images/vamos/mobile.webp" width="120px" height="160px"
-                            alt="Vamos website shown on a smartphone">
+                            alt="Vamos website shown on a smartphone" title="Vamos website shown on a smartphone" >
                     </div>
                     <ul class="flex flex-row gap-2 justify-center flex-wrap mb-4 w-[85%] m-auto"
                         aria-label="Tecnologias utilizadas">
@@ -382,18 +388,18 @@
             <h2 class="text-3xl mb-8 uppercase">Certifications</h2>
             <ul class="flex flex-row flex-wrap justify-center m-auto gap-8 select-none overflow-x-auto max-w-full pb-4">
 
-                <li class="transition-all flex flex-[1_0_350px] flex-col w-64 gap-4 rounded-lg  
+                <li class="transition-all flex flex-[1_0_350px] max-w-full flex-col  w-64 gap-4 rounded-lg  
                     p-6 snap-start dark:bg-slate-800 bg-slate-100 items-center text-center">
-                    <img loading="lazy"  class="pointer-events-none w-full max-w-full object-contain max-h-12"
-                        src="assets/images/certifications/marcaUnicidVariacao.svg" alt="">
+                    <img loading="lazy" class="pointer-events-none w-full max-w-full object-contain max-h-12"
+                        src="assets/images/certifications/marcaUnicidVariacao.svg" alt="Unicid logo image " title="Unicid logo image " >
                     <h3 class=" text-md uppercase font-medium mt-4">Software Engineering and <br> Agile Methods</h3>
                     <span class="text-sm mt-auto">Specialization</span>
 
                 </li>
-                <li class="transition-all flex flex-[1_0_350px] flex-col w-64 gap-4 rounded-lg  
+                <li class="transition-all flex flex-[1_0_350px] max-w-full flex-col w-64 gap-4 rounded-lg  
                     p-6 snap-start dark:bg-slate-800 bg-slate-100 items-center text-center">
-                    <img loading="lazy"  class="pointer-events-none w-full max-w-full object-contain max-h-12"
-                        src="assets/images/certifications/marcaCruzeirodosulVariacao.svg" alt="">
+                    <img loading="lazy" class="pointer-events-none w-full max-w-full object-contain max-h-12"
+                        src="assets/images/certifications/marcaCruzeirodosulVariacao.svg" alt="Cruzeiro do Sul logo image" title="Cruzeiro do Sul logo image" >
                     <h3 class=" text-md uppercase font-medium mt-4">Analysis and <br> Systems development</h3>
                     <span class="text-sm mt-auto">Bachelor of Technology</span>
 
@@ -411,22 +417,23 @@
 
                     <p class="text-lg flex flex-row items-center font-bold">Evilazio Ricarte <span
                             class="text-sm ml-2 font-normal">~ He/Him</span></p>
-                    <p class="text-sm font-medium flex items center gap-2"><img loading="lazy"  src="/assets/images/br-flag.svg"
-                            width="20px" height="16px" alt="Brazil country flag"> Portuguese <span class="font-normal">-
+                    <p class="text-sm font-medium flex items center gap-2"><img loading="lazy"
+                            src="/assets/images/br-flag.svg" width="20px" height="16px" alt="Brazil country flag" title="Brazil country flag" >
+                        Portuguese <span class="font-normal">-
                             native</span></p>
-                    <p class="text-sm font-medium flex items center gap-2"><img loading="lazy"  src="/assets/images/usa-flag.svg"
-                            width="20px" height="16px" alt="United States of America country flag"> English <span
-                            class="font-normal">-
+                    <p class="text-sm font-medium flex items center gap-2"><img loading="lazy"
+                            src="/assets/images/usa-flag.svg" width="20px" height="16px"
+                            alt="United States of America country flag" title="United States of America country flag"> English <span class="font-normal" title="United States of America country flag"> English <span class="font-normal" >-
                             intermediate</span></p>
 
                     <a href="https://drive.google.com/file/d/1NcOCMk6UQEiKIru5jWMERiKPiI9sIgXK/view?usp=sharing"
-                        target="_blank"
+                        target="_blank" title="Resume Download (Portuguese version)"
                         class="hover:bg-blue-600 dark:hover:bg-blue-800 w-full bg-blue-600 mt-6 text-white hover:shadow-none active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
                         Resume (Portuguese)
                         <i class="w-3" icon-name="download"></i>
                     </a>
                     <a href="https://docs.google.com/document/d/1E9VHn28QxCYQRz3RcarfAbKUDJdASYK4cJy25_1BPe0/edit?usp=sharing"
-                        target="_blank"
+                        target="_blank" title="Resume Download (English version)"
                         class="hover:bg-blue-600 dark:hover:bg-blue-800 w-full bg-blue-600 mt-2 text-white hover:shadow-none active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
                         Resume (English)
                         <i class="w-3" icon-name="download"></i>
@@ -444,6 +451,7 @@
 
                     </a>
                     <a href="https://github.com/Evilazio" target="_blank"
+                        title="Access my GitHub page"
                         class="hover:bg-blue-500 dark:hover:bg-blue-800 hover:shadow-none dark:shadow-slate-800 active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row gap-2 items-center rounded-full shadow-lg py-1 px-4">
 
                         GitHub
@@ -491,26 +499,20 @@
         </footer>
     </main>
 
-    <div class="fixed bottom-0 right-0 p-2 z-20 flex flex-col gap-2">
+    <!-- <div class="fixed bottom-0 right-0 p-2 z-20 flex flex-col gap-2">
         <a href="#" aria-label="Click here to share this page" title="Share this page"
             class=" hover:bg-blue-600 dark:hover:bg-blue-600 bg-slate-500 dark:bg-slate-600 text-white hover:shadow-none 
             active:bg-emerald-400 hover:text-white justify-center text-smaatransition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
 
             <i class="w-4" icon-name="arrow-up"></i>
         </a>
-        <!-- <button aria-label="Click here to share this page" title="Share this page"
-            class="share hover:bg-blue-600 dark:hover:bg-blue-800 bg-slate-500  dark:bg-slate-300 text-white hover:shadow-none 
-            active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
-
-            <i class="w-4" icon-name="arrow-down"></i>
-        </button> -->
         <button aria-label="Click here to share this page" title="Share this page"
             class="share hover:bg-blue-600 dark:hover:bg-blue-800 bg-slate-500  dark:bg-blue-700 text-white hover:shadow-none 
             active:bg-emerald-400 hover:text-white justify-center text-sm transition-all flex flex-row w-12 h-12 gap-2 items-center rounded-full shadow-lg ">
 
             <i class="w-4" icon-name="share-2"></i>
         </button>
-    </div>
+    </div> -->
 
     <script src="js/util.js"></script>
     <script src="js/share.js"></script>
